@@ -1,91 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>NotionAsistan</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-50 text-gray-800">
-  <!-- Hero -->
-  <section class="text-center py-20 bg-indigo-600 text-white">
-    <h1 class="text-4xl font-bold mb-4">Hiçbir işi unutma!</h1>
-    <p class="text-lg mb-6">Notion tabanlı hatırlatma sistemiyle işlerini kolayca takip et.</p>
-    <a href="#iletisim" class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition">Hemen İletişime Geç</a>
-  </section>
 
-  <!-- Neden -->
-  <section class="py-16 px-6 max-w-5xl mx-auto">
-    <h2 class="text-2xl font-bold mb-6 text-center">Neden NotionAsistan?</h2>
-    <div class="grid md:grid-cols-3 gap-6 text-center">
-      <div class="bg-white p-6 rounded-xl shadow">Takvimlerle uğraşmak zorunda değilsin</div>
-      <div class="bg-white p-6 rounded-xl shadow">Otomatik mail ya da mesaj hatırlatmaları</div>
-      <div class="bg-white p-6 rounded-xl shadow">Tüm kayıtların tek yerde, sade bir arayüz</div>
-    </div>
-  </section>
+  <header class="bg-indigo-600 text-white text-center py-6 shadow">
+    <h1 class="text-3xl font-bold">NotionAsistan</h1>
+    <p class="text-lg">Otomatik hatırlatma sistemleriyle işleri kolaylaştır</p>
+  </header>
 
-  <!-- Nasıl Çalışır -->
-  <section class="bg-white py-16 px-6">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl font-bold mb-6 text-center">Nasıl Çalışır?</h2>
-      <ol class="space-y-4 list-decimal list-inside text-lg">
-        <li>Notion’da sana özel iş / müşteri takibi tablosu oluşturulur</li>
-        <li>Belirlediğin tarihler yaklaştığında otomatik mail ya da mesaj gelir</li>
-        <li>İşler tamamlandığında sistem otomatik olarak arşivler</li>
-      </ol>
-    </div>
-  </section>
+  <main class="max-w-2xl mx-auto p-6">
+    <section class="my-12">
+      <h2 class="text-xl font-semibold mb-4">Demo Proje</h2>
+      <p>Bu sayfa, Notion tabanlı otomatik hatırlatma sistemleri hizmeti için hazırlanmış bir tanıtım demosudur.</p>
+    </section>
 
-  <!-- Paketler -->
-  <section class="py-16 px-6 bg-gray-100">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-2xl font-bold mb-10 text-center">Hizmet Paketleri</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-white p-6 rounded-xl shadow">
-          <h3 class="text-xl font-semibold mb-2">Kolay Takip Paketi – 1490 TL</h3>
-          <ul class="list-disc list-inside">
-            <li>Notion CRM yapısı</li>
-            <li>Otomatik e-posta hatırlatma</li>
-            <li>1 saat birebir kullanım eğitimi</li>
-            <li>1 hafta destek</li>
-          </ul>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow">
-          <h3 class="text-xl font-semibold mb-2">Pro Hatırlatma Paketi – 2290 TL</h3>
-          <ul class="list-disc list-inside">
-            <li>Notion CRM + Mail + WhatsApp</li>
-            <li>3 özel senaryo kurulumu</li>
-            <li>Otomatik arşivleme</li>
-            <li>2 hafta destek</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SSS -->
-  <section class="py-16 px-6">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl font-bold mb-6 text-center">Sık Sorulan Sorular</h2>
-      <div class="space-y-4">
-        <div>
-          <h4 class="font-semibold">Kod bilmem gerekiyor mu?</h4>
-          <p>Hayır, tüm kurulum senin için yapılır. Sadece kullanırsın.</p>
-        </div>
-        <div>
-          <h4 class="font-semibold">Mail dışında WhatsApp ile çalışır mı?</h4>
-          <p>Evet, WhatsApp entegrasyonu da mümkündür (Pro paket ile).</p>
-        </div>
-        <div>
-          <h4 class="font-semibold">Ne kadar sürede kurulum tamamlanır?</h4>
-          <p>Genellikle 1-2 gün içerisinde sistemin hazır olur.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- İletişim -->
-  <section id="iletisim" class="bg-indigo-600 text-white py-12 px-6 rounded-lg">
+    <section id="iletisim" class="bg-indigo-600 text-white py-12 px-6 rounded-lg">
       <h2 class="text-2xl font-bold mb-4 text-center">İletişime Geç</h2>
       <p class="mb-6 text-center">Soruların veya sipariş vermek için formu doldurabilirsin.</p>
       <form action="https://formsubmit.co/erensar6154@gmail.com" method="POST" class="space-y-4 max-w-md mx-auto">
@@ -102,9 +37,11 @@
         </a>
       </div>
     </section>
+  </main>
 
-  <footer class="text-center text-sm py-6 bg-gray-100">
+  <footer class="text-center text-sm text-gray-500 mt-12 mb-4">
     &copy; 2025 NotionAsistan. Tüm hakları saklıdır.
   </footer>
+
 </body>
 </html>

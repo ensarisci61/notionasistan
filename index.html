@@ -86,10 +86,15 @@
 
   <!-- İletişim -->
   <section id="iletisim" class="bg-indigo-600 text-white py-16 px-6 text-center">
-    <h2 class="text-2xl font-bold mb-4">İletişime Geç</h2>
-    <p class="mb-6">Soruların veya sipariş vermek için bana ulaşabilirsin.</p>
-    <a href="https://wa.me/905XXXXXXXXX" class="inline-block bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100">WhatsApp’tan Yaz</a>
-  </section>
+  <h2 class="text-2xl font-bold mb-4">İletişime Geç</h2>
+  <p class="mb-6">Soruların veya sipariş vermek için bana ulaşabilirsin.</p>
+  <form name="iletisim-form" method="POST" data-netlify="true" class="space-y-4">
+    <input type="text" name="ad" placeholder="Adınız" class="w-full p-3 rounded-md border border-gray-300" required>
+    <input type="email" name="email" placeholder="E-posta Adresiniz" class="w-full p-3 rounded-md border border-gray-300" required>
+    <textarea name="mesaj" placeholder="Mesajınız" class="w-full p-3 rounded-md border border-gray-300" rows="4" required></textarea>
+    <button type="submit" class="w-full bg-white text-indigo-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition">Gönder</button>
+  </form>
+</section>
 
   <footer class="text-center text-sm py-6 bg-gray-100">
     &copy; 2025 NotionAsistan. Tüm hakları saklıdır.
